@@ -1,25 +1,127 @@
-<main style="font-family:system-ui;padding:2rem;line-height:1.6;max-width:720px;margin:auto;text-align:center">
-  <h1 style="font-size:2.5rem;font-weight:700">
-    Hello Brentwood Web Designers 👋
-  </h1>
-  <p style="font-size:1.25rem;margin-top:1rem">
-    You ready to hack away???
-  </p>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Wanderlust Destinations</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Open Sans', sans-serif;
+      background-color: #fafafa;
+      color: #333;
+    }
 
-  <p style="margin-top:2rem">
-    This site is deployed on <strong>Vercel</strong> using <em>Serverless Functions</em> — no installs, no setup, just creativity and code.
-  </p>
+    header {
+      background-image: url('https://images.unsplash.com/photo-1507525428034-b723cf961d3e');
+      background-size: cover;
+      background-position: center;
+      color: white;
+      text-align: center;
+      padding: 120px 20px;
+    }
 
-  <p style="margin-top:2rem">
-    Try your first API endpoint:  
-    <a href="/api/hello" style="font-weight:600;color:#0051ff">/api/hello</a>
-  </p>
+    header h1 {
+      font-family: 'Playfair Display', serif;
+      font-size: 3.5rem;
+      margin-bottom: 0.5rem;
+    }
 
-  <hr style="margin:2rem 0">
+    header p {
+      font-size: 1.2rem;
+      letter-spacing: 1px;
+    }
 
-  <p style="font-size:0.95rem;color:#555">
-    Tip: Set an environment variable named <code>GREETING_NAME</code> in  
-    <strong>Vercel → Project → Settings → Environment Variables</strong>, then redeploy.  
-    Your API will greet you personally next time 🚀
-  </p>
-</main>
+    main {
+      max-width: 1200px;
+      margin: 60px auto;
+      padding: 0 20px;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 30px;
+    }
+
+    .city-card {
+      background: white;
+      border-radius: 16px;
+      overflow: hidden;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      text-decoration: none;
+      color: inherit;
+    }
+
+    .city-card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+    }
+
+    .city-card img {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+    }
+
+    .city-card h2 {
+      font-family: 'Playfair Display', serif;
+      font-size: 1.5rem;
+      margin: 16px;
+    }
+
+    footer {
+      text-align: center;
+      padding: 40px;
+      font-size: 0.9rem;
+      color: #777;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Wanderlust Destinations</h1>
+    <p>Explore curated travel experiences around the world</p>
+  </header>
+
+  <main>
+    <a href="oahu.html" class="city-card">
+      <img src="https://images.unsplash.com/photo-1508261303786-0e1b8b8c7a1a" alt="Oahu">
+      <h2>Oahu</h2>
+    </a>
+    <a href="san-francisco.html" class="city-card">
+      <img src="https://images.unsplash.com/photo-1501594907352-04cda38ebc29" alt="San Francisco">
+      <h2>San Francisco</h2>
+    </a>
+    <a href="los-angeles.html" class="city-card">
+      <img src="https://images.unsplash.com/photo-1542345812-d98b5cd6cf98" alt="Los Angeles">
+      <h2>Los Angeles</h2>
+    </a>
+    <a href="paris.html" class="city-card">
+      <img src="https://images.unsplash.com/photo-1502602898657-3e91760cbb34" alt="Paris">
+      <h2>Paris</h2>
+    </a>
+    <a href="tokyo.html" class="city-card">
+      <img src="https://images.unsplash.com/photo-1568084680786-a84f91d1153c" alt="Tokyo">
+      <h2>Tokyo</h2>
+    </a>
+    <a href="seoul.html" class="city-card">
+      <img src="https://images.unsplash.com/photo-1549692520-acc6669e2f0c" alt="Seoul">
+      <h2>Seoul</h2>
+    </a>
+    <a href="copenhagen.html" class="city-card">
+      <img src="https://images.unsplash.com/photo-1502602898657-3e91760cbb34" alt="Copenhagen">
+      <h2>Copenhagen</h2>
+    </a>
+    <a href="italy.html" class="city-card">
+      <img src="https://images.unsplash.com/photo-1502602898657-3e91760cbb34" alt="Italy">
+      <h2>Italy</h2>
+    </a>
+  </main>
+
+  <footer>
+    &copy; 2025 Wanderlust Destinations. All rights reserved.
+  </footer>
+</body>
+</html>
